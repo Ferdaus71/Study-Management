@@ -9,7 +9,7 @@ load_dotenv()
 # Page config
 st.set_page_config(page_title="AI Study Management", layout="centered")
 
-st.title("📚 AI Study Management System")
+st.title("AI Study Management System")
 
 # Sidebar
 st.sidebar.header("Settings")
@@ -35,7 +35,7 @@ def generate_response(prompt):
     return response.choices[0].message.content
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(["📄 Summary", "🧠 Flashcards", "📝 Quiz"])
+tab1, tab2, tab3 = st.tabs(["Summary", "Flashcards", "Quiz"])
 
 text = st.text_area("Enter your study text here", height=200)
 
